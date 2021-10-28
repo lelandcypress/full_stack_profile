@@ -1,0 +1,10 @@
+.borderc {
+  border: #496d83 2px solid;
+}
+.skill-list {
+  list-style-type: none;
+}
+.about-border {
+  border: solid 2px #496d83;
+  border-radius: 7px;
+}

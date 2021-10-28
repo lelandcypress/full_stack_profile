@@ -1,0 +1,15 @@
+.header {
+  background: #496d83;
+
+  border: #6d2f2f 1px solid;
+}
+.navbrand {
+  margin-left: 2%;
+ 
+}
+
+.navcss {
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+}

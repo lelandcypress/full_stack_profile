@@ -1,0 +1,25 @@
+@media screen and (max-width: 1200px) {
+  .welcome {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .welcome {
+    font-size: 1.25em;
+  }
+
+  .home-border {
+    border: solid 5px black;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .welcome {
+    font-size: 1em;
+  }
+
+  .home-border {
+    border: solid 5px black;
+  }
+}
