@@ -16,7 +16,7 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/full_stack_profile">
             <Home />
           </Route>
           <Route exact path="/about">

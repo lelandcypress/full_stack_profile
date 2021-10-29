@@ -9,7 +9,7 @@ function Navigation() {
   return (
     <Navbar collapseOnSelect expand="lg" className="header">
       <Container className="w-100">
-        <Navbar.Brand className="navbrand" href="/">
+        <Navbar.Brand className="navbrand" href="/full_stack_profile">
           <h2>Michael Souter</h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
