@@ -1,42 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Contact.css";
-import { validateEmail } from "../components/utils/helper";
+import { useForm, ValidationError } from "@formspree/react";
+import Container from "react-bootstrap/Container";
 
-function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
+import Card from "react-bootstrap/Card";
 
-  const handleInputChange = (e) => {
-    const { target } = e;
-    const inputType = target.name;
-    const inputValue = target.value;
+/*function Contact() {
 
-    if (inputType === "name") {
-      setName(inputValue);
-    } else if (inputType === "email") {
-      setEmail(inputValue);
-    } else {
-      setMessage(inputValue);
-    }
-  };
 
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
-
-    if (!validateEmail(email)) {
-      setErrorMessage("Please enter valid email address");
-      // We want to exit out of this code block if something is wrong so that the user can correct it
-      return;
-      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
-    }
-
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
+ 
 
   return (
     <div className="container">
@@ -44,7 +16,11 @@ function Contact() {
         <div>
           <h1>Contact</h1>
         </div>
-        <form onSubmit={handleFormSubmit}>
+        <form
+          onSubmit={handleFormSubmit}
+          action="https://formspree.io/f/xleaydnk"
+          method="POST"
+        >
           <div className="form-group">
             <label>Name</label>
             <input
@@ -80,21 +56,71 @@ function Contact() {
               required
             />
           </div>
+         
+        </form>
+        
+      </div>
+    </div>
+  );
+}
+export default Contact;*/
+
+function Contact() {
+  const [state, handleSubmit] = useForm("xleaydnk");
+  if (state.succeeded) {
+    return <p>Thank you for reaching out!</p>;
+  }
+  return (
+    <Container>
+      <Card className="responsive-width mx-2 p-4 my-5 border border-dark">
+        <div>
+          <h1>Contact</h1>
+        </div>
+        <form onSubmit={handleSubmit}>
+          <div className="form-group">
+            <label className="mt-3">Name</label>
+            <input
+              className="form-control"
+              id="name"
+              type="text"
+              name="name"
+            ></input>
+          </div>
+          <div className="form-group">
+            <label className="mt-3" htmlFor="email">
+              Email Address
+            </label>
+            <input
+              className="form-control"
+              id="email"
+              type="email"
+              name="email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
+          <div className="form-group">
+            <label className="mt-3">Message</label>
+            <textarea className="form-control" id="message" name="message" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
+          </div>
           <button
-            className="btn btn-primary"
-            type="button"
-            onClick={handleFormSubmit}
+            className="btn btn-primary my-3"
+            type="submit"
+            disabled={state.submitting}
           >
             Submit
           </button>
         </form>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-      </div>
-    </div>
+      </Card>
+    </Container>
   );
 }
 export default Contact;
