@@ -14,7 +14,7 @@ I build out a collection of my best projects in an SPA using React.js. As you lo
 
 note: to see a more robust commit history see the following link: https://github.com/lelandcypress/react_portfolio
 
-### Deployed URL : https://lelandcypress.github.io/react_portfolio/
+### Deployed URL : https://lelandcypress.github.io/full_stack_profile/
 
 ## Installation
 
