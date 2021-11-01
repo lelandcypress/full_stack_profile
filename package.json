@@ -2,7 +2,7 @@
   "name": "full_stack_profile",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lelandcypress.github.io/full_stack_profile/",
+  "homepage": "https://lelandcypress.github.io/",
   "dependencies": {
     "@formspree/react": "^2.2.4",
     "@testing-library/jest-dom": "^5.14.1",
