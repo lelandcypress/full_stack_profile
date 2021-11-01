@@ -66,9 +66,11 @@ function About() {
             React <GrReactjs />
           </li>
         </ul>
-        <a target="_blank" href="../components/pdf/Resume.pdf" download>
-          <p>Resume</p>
-        </a>
+        <div className="mb-4 p-4">
+          <a target="_blank" href="../components/pdf/Resume.pdf" download>
+            <p>Resume</p>
+          </a>
+        </div>
       </div>
     </div>
   );
