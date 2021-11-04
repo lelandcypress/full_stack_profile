@@ -70,7 +70,7 @@ const projects = [
 
 export default function ProjectDisplay() {
   return (
-    <div className="row d-flex justify-content-around">
+    <div className="row justify-content-around mx-2">
       {projects.map((project) => (
         <Projects
           name={project.name}

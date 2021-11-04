@@ -5,73 +5,17 @@ import Container from "react-bootstrap/Container";
 
 import Card from "react-bootstrap/Card";
 
-/*function Contact() {
-
-
- 
-
-  return (
-    <div className="container">
-      <div className="card responsive-width mx-2 p-4 my-5 border border-dark">
-        <div>
-          <h1>Contact</h1>
-        </div>
-        <form
-          onSubmit={handleFormSubmit}
-          action="https://formspree.io/f/xleaydnk"
-          method="POST"
-        >
-          <div className="form-group">
-            <label>Name</label>
-            <input
-              name="name"
-              type="text"
-              className="form-control"
-              id="name"
-              value={name}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label className="mt-3">Email</label>
-            <input
-              name="email"
-              type="text"
-              className="form-control"
-              id="contactEmail"
-              value={email}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label className="mt-3">Message</label>
-            <textarea
-              name="message"
-              rows="3"
-              className="form-control mb-4"
-              value={message}
-              onChange={handleInputChange}
-              required
-            />
-          </div>
-         
-        </form>
-        
-      </div>
-    </div>
-  );
-}
-export default Contact;*/
-
 function Contact() {
   const [state, handleSubmit] = useForm("xleaydnk");
   if (state.succeeded) {
-    return <p>Thank you for reaching out!</p>;
+    return (
+      <Container className="my-5" style={{ height: "100vh" }}>
+                  <h1>Thank you for reaching out!</h1>
+      </Container>
+    );
   }
   return (
-    <Container>
+    <Container style={{ height: "100vh" }}>
       <Card className="responsive-width mx-2 p-4 my-5 border border-dark">
         <div>
           <h1>Contact</h1>

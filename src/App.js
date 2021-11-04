@@ -5,6 +5,7 @@ import About from "./pages/About";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
+import Resume from "./components/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Footer from "./components/Footer";
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/contact">
             <Contact />
+          </Route>
+          <Route exact path="/Resume">
+            <Resume />
           </Route>
         </Switch>
         <Footer />

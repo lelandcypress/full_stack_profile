@@ -13,7 +13,7 @@ import { GrReactjs } from "react-icons/gr";
 
 function About() {
   return (
-    <div className="container my-4">
+    <div className="container my-4" style={{ height: "100vh" }}>
       <div className="jumbotron my-4 about-border" id="about-me">
         <figure id="profContainer" className="rounded">
           <img
@@ -23,19 +23,23 @@ function About() {
             alt="profile-pic"
           ></img>
         </figure>
-        <p className="p-5">
-          I am a Full Stack developer eager to develop high quality solutions
-          through technology. I have many years of leadership experience, be it
-          leading Marines or guiding my clients through challenging milestones.
-          My background as a Project Manager has honed my communication and
-          collaborative skills. I'm a graduate of a Full Stack Coding Bootcamp
-          from Southern Methodist University, where I have learned and applied
-          the MVC paradigm and OOP through JavaScript, Node, Express, and SQL.
-          As a performance-driven leader, I am excited to use my technical
-          skills and collaborative nature to help your team to continue to
-          develop innovative, and exciting products.
-        </p>
+        <div className="px-4">
+          <p>
+            I'm a former Officer in the Marine Corps, an experienced Project
+            Manager with an MBA, and graduate of a Full Stack Coding Bootcamp
+            from Southern Methodist University. I currently specialize in the
+            MERN stack with a bent toward SQL, but am eager to branch off to
+            other languages. As a performance-driven leader, I am excited to use
+            my technical skills and collaborative nature to help your team to to
+            develop innovative, and exciting products.
+          </p>
 
+          <p>
+            Based out of Charleston South Carolina. On my free time you can
+            usually find me working on my lawn, chasing two toddlers around the
+            house, and watching the Philadelphia Eagles.
+          </p>
+        </div>
         <ul className="skill-list">
           <h3>Skilled in</h3>
           <li>
@@ -67,7 +71,7 @@ function About() {
           </li>
         </ul>
         <div className="mb-4 p-4">
-          <a target="_blank" href="../components/pdf/Resume.pdf" download>
+          <a href="/Resume">
             <p>Resume</p>
           </a>
         </div>

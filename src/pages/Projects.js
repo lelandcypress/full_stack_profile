@@ -18,9 +18,9 @@ const allImages = {
 
 export default function Projects(props) {
   return (
-    <div className="d-flex mx-2 my-4 col-xl-3 col-md-4 flex-wrap cards bordercustom">
-      <div className="w-100">
-        <figure className="d-flex row">
+    <div className="mx-1 my-4 col-xl-3 col-md-4  cards bordercustom">
+      <div>
+        <figure className="row">
           <figcaption className="projtitle">{props.name}</figcaption>
           <p className="projDescription">{props.description}</p>
         </figure>
