@@ -5,11 +5,12 @@ import About from "./pages/About";
 import ProjectDisplay from "./pages/ProjectDisplay";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
-import Resume from "./components/Resume";
+import Resume from "./pages/Resume";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Footer from "./components/Footer";
 import "./App.css";
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
@@ -17,21 +18,11 @@ function App() {
       <Router>
         <Navigation />
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/about">
-            <About />
-          </Route>
-          <Route exact path="/projects">
-            <ProjectDisplay />
-          </Route>
-          <Route exact path="/contact">
-            <Contact />
-          </Route>
-          <Route exact path="/Resume">
-            <Resume />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/projects" component={ProjectDisplay} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/resume" component={Resume} />
         </Switch>
         <Footer />
       </Router>

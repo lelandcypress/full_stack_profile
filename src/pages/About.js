@@ -70,11 +70,6 @@ function About() {
             React <GrReactjs />
           </li>
         </ul>
-        <div className="mb-4 p-4">
-          <a href="/Resume">
-            <p>Resume</p>
-          </a>
-        </div>
       </div>
     </div>
   );
