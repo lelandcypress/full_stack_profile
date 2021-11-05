@@ -3,8 +3,15 @@ import PDF from "../components/pdf/Resume.pdf";
 
 function Resume() {
   return (
-    <div className=" d-flex justify-content-center align-items-center">
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       <embed
+        style={{ display: "inline" }}
         iframe
         src={PDF + "#toolbar=0"}
         type="application/pdf"
