@@ -23,3 +23,13 @@
     border: solid 5px black;
   }
 }
+
+@media screen and (min-width: 450px) {
+  .containerflex {
+    height: 100vh;
+  }
+}
+
+.background-adjustment {
+  height: 100vh;
+}

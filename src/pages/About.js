@@ -13,7 +13,7 @@ import { GrReactjs } from "react-icons/gr";
 
 function About() {
   return (
-    <div className="container my-4" style={{ height: "100vh" }}>
+    <div className="container my-4 containerflex">
       <div className="jumbotron my-4 about-border" id="about-me">
         <figure id="profContainer" className="rounded">
           <img
@@ -28,7 +28,7 @@ function About() {
             I'm a former Officer in the Marine Corps, an experienced Project
             Manager with an MBA, and graduate of a Full Stack Coding Bootcamp
             from Southern Methodist University. I currently specialize in the
-            MERN stack with a bent toward SQL, but am eager to branch off to
+            MERN stack with a bent toward SQL, but I am eager to branch off in to
             other languages. As a performance-driven leader, I am excited to use
             my technical skills and collaborative nature to help your team to to
             develop innovative, and exciting products.
@@ -40,6 +40,7 @@ function About() {
             house, and watching the Philadelphia Eagles.
           </p>
         </div>
+       
         <ul className="skill-list">
           <h3>Skilled in</h3>
           <li>

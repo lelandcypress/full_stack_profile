@@ -1,0 +1,17 @@
+@media screen and (min-width: 450px) {
+  .containerflex {
+    height: 100vh;
+  }
+  .resume-link {
+    position: relative;
+    left: 35%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .containerflex {
+    height: 100vh;
+  }
+  .resume-body {
+    background-color: white;
+  }
+}

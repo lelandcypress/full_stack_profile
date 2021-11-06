@@ -15,7 +15,7 @@ function Contact() {
     );
   }
   return (
-    <Container style={{ height: "100vh" }}>
+    <Container className="background-adjustment">
       <Card className="responsive-width mx-2 p-4 my-5 border border-dark">
         <div>
           <h1>Contact</h1>
