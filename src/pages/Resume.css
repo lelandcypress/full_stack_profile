@@ -16,4 +16,7 @@
     max-width: 400px;
     overflow: scroll;
   }
+  .resume-link {
+    display: none;
+  }
 }
