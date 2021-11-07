@@ -30,13 +30,13 @@ function About() {
             from Southern Methodist University. I currently specialize in the
             MERN stack with a bent toward SQL, but I am eager to branch off in to
             other languages. As a performance-driven leader, I am excited to use
-            my technical skills and collaborative nature to help your team to to
-            develop innovative, and exciting products.
+            my technical skills and collaborative nature to help your team
+            develop innovative and exciting products.
           </p>
 
           <p>
-            Based out of Charleston South Carolina. On my free time you can
-            usually find me working on my lawn, chasing two toddlers around the
+            Based out of Charleston, South Carolina, where in my spare time you can
+            find me working on my lawn, chasing two toddlers around the
             house, and watching the Philadelphia Eagles.
           </p>
         </div>
